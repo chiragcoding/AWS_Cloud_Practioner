@@ -3,7 +3,7 @@ import "./globals.css";
 import { Sidebar } from "@/components/Sidebar";
 
 export const metadata: Metadata = {
-  title: "AWS Cloud Practitioner Prep | Interactive Study Guide",
+  title: "AWS Zero to Cloud Hero | Study Guide",
   description:
     "Master AWS Cloud Practitioner (CLF-C02) with interactive study notes, exam tips, and AI-powered doubt clearing.",
 };
