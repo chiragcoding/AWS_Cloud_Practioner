@@ -57,7 +57,7 @@ export function Chatbot({ topic }: ChatbotProps) {
       {/* Floating Chat Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`fixed bottom-6 right-6 z-50 w-14 h-14 rounded-2xl text-white shadow-xl transition-all duration-300 flex items-center justify-center ${
+        className={`fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 w-12 h-12 sm:w-14 sm:h-14 rounded-2xl text-white shadow-xl transition-all duration-300 flex items-center justify-center ${
           isOpen
             ? "bg-slate-800 hover:bg-slate-700 shadow-slate-300/40"
             : "bg-indigo-600 hover:bg-indigo-700 hover:shadow-2xl hover:shadow-indigo-300/40 hover:scale-105"
@@ -77,7 +77,7 @@ export function Chatbot({ topic }: ChatbotProps) {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-24 right-6 z-50 w-[400px] max-w-[calc(100vw-2rem)] h-[560px] max-h-[calc(100vh-8rem)] bg-white border border-slate-200/80 rounded-3xl shadow-2xl shadow-slate-300/30 flex flex-col overflow-hidden animate-scale-in">
+        <div className="fixed bottom-24 right-4 sm:right-6 z-50 w-[400px] max-w-[calc(100vw-2rem)] h-[560px] max-h-[calc(100vh-8rem)] bg-white border border-slate-200/80 rounded-3xl shadow-2xl shadow-slate-300/30 flex flex-col overflow-hidden animate-scale-in">
           {/* Header */}
           <div className="px-6 py-4 border-b border-slate-100 bg-gradient-to-r from-indigo-50/80 via-purple-50/50 to-pink-50/30">
             <div className="flex items-center gap-3">

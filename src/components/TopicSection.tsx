@@ -6,14 +6,14 @@ interface TopicSectionProps {
 
 export function TopicSection({ title, children, id }: TopicSectionProps) {
   return (
-    <section id={id} className="mb-14 scroll-mt-8">
-      <div className="flex items-center gap-3 mb-6">
+    <section id={id} className="mb-10 sm:mb-14 scroll-mt-8">
+      <div className="flex items-center gap-3 mb-4 sm:mb-6">
         <div className="w-1.5 h-7 rounded-full bg-gradient-to-b from-indigo-500 to-purple-500"></div>
-        <h2 className="text-xl font-bold text-slate-900 tracking-tight">
+        <h2 className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight">
           {title}
         </h2>
       </div>
-      <div className="space-y-4 pl-1">{children}</div>
+      <div className="space-y-3 sm:space-y-4 pl-0 sm:pl-1">{children}</div>
     </section>
   );
 }
@@ -59,11 +59,11 @@ export function InfoCard({
 
   return (
     <div
-      className={`relative rounded-2xl border p-5 transition-all duration-200 hover:shadow-md ${variantStyles[variant]} ${accentBar[variant]}`}
+      className={`relative rounded-2xl border p-4 sm:p-5 transition-all duration-200 hover:shadow-md ${variantStyles[variant]} ${accentBar[variant]}`}
     >
       {title && (
         <h3
-          className={`font-semibold text-[13px] mb-3 flex items-center gap-2 ${titleColors[variant]}`}
+          className={`font-semibold text-[13px] mb-2 sm:mb-3 flex items-center gap-2 ${titleColors[variant]}`}
         >
           {iconMap[variant] && (
             <span className="text-base">{iconMap[variant]}</span>
@@ -71,7 +71,7 @@ export function InfoCard({
           {title}
         </h3>
       )}
-      <div className="text-[13px] text-slate-600 leading-[1.7]">{children}</div>
+      <div className="text-[12px] sm:text-[13px] text-slate-600 leading-[1.7]">{children}</div>
     </div>
   );
 }
@@ -83,14 +83,14 @@ interface TableProps {
 
 export function ComparisonTable({ headers, rows }: TableProps) {
   return (
-    <div className="overflow-x-auto rounded-2xl border border-slate-200/80 bg-white shadow-sm shadow-slate-100/50">
-      <table className="w-full text-[13px]">
+    <div className="overflow-x-auto -mx-4 sm:mx-0 rounded-none sm:rounded-2xl border border-slate-200/80 bg-white shadow-sm shadow-slate-100/50">
+      <table className="w-full text-[11px] sm:text-[13px]">
         <thead>
           <tr className="bg-gradient-to-r from-slate-50 to-slate-50/50">
             {headers.map((header, i) => (
               <th
                 key={i}
-                className="px-5 py-3.5 text-left font-bold text-slate-600 border-b border-slate-200/80 text-[11px] uppercase tracking-wider"
+                className="px-3 sm:px-5 py-2.5 sm:py-3.5 text-left font-bold text-slate-600 border-b border-slate-200/80 text-[10px] sm:text-[11px] uppercase tracking-wider whitespace-nowrap"
               >
                 {header}
               </th>
@@ -106,7 +106,7 @@ export function ComparisonTable({ headers, rows }: TableProps) {
               {row.map((cell, j) => (
                 <td
                   key={j}
-                  className={`px-5 py-3.5 ${
+                  className={`px-3 sm:px-5 py-2.5 sm:py-3.5 ${
                     j === 0
                       ? "font-medium text-slate-700"
                       : "text-slate-500"
@@ -129,10 +129,10 @@ interface BulletListProps {
 
 export function BulletList({ items }: BulletListProps) {
   return (
-    <ul className="space-y-3 text-[13px] text-slate-600">
+    <ul className="space-y-2 sm:space-y-3 text-[12px] sm:text-[13px] text-slate-600">
       {items.map((item, i) => (
-        <li key={i} className="flex items-start gap-3">
-          <span className="w-5 h-5 rounded-md bg-indigo-50 flex items-center justify-center shrink-0 mt-0.5">
+        <li key={i} className="flex items-start gap-2 sm:gap-3">
+          <span className="w-4 h-4 sm:w-5 sm:h-5 rounded-md bg-indigo-50 flex items-center justify-center shrink-0 mt-0.5">
             <span className="w-1.5 h-1.5 rounded-full bg-indigo-400"></span>
           </span>
           <span className="leading-relaxed">{item}</span>

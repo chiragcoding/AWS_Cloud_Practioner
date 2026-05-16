@@ -163,6 +163,23 @@ html {
   background: #9ca3af;
 }
 
+/* Mobile-friendly table scroll indicator */
+@media (max-width: 640px) {
+  .overflow-x-auto {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+  
+  .overflow-x-auto::-webkit-scrollbar {
+    height: 3px;
+  }
+  
+  .overflow-x-auto::-webkit-scrollbar-thumb {
+    background: #c7d2fe;
+    border-radius: 10px;
+  }
+}
+
 /* Animations */
 @keyframes slideUp {
   from {

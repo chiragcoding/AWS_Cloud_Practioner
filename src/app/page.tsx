@@ -108,9 +108,9 @@ export default function Home() {
       {/* Hero Section */}
       <div className="relative overflow-hidden border-b border-slate-200/60">
         <div className="absolute inset-0 bg-gradient-to-b from-indigo-50/40 via-white to-white"></div>
-        <div className="relative max-w-6xl mx-auto px-6 md:px-10 pt-20 pb-16">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 md:px-10 pt-12 sm:pt-16 md:pt-20 pb-10 sm:pb-16">
           {/* Floating badge */}
-          <div className="flex justify-center mb-8 animate-slide-up">
+          <div className="flex justify-center mb-6 sm:mb-8 animate-slide-up">
             <div className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full glass border border-white/60 shadow-lg shadow-indigo-100/30">
               <span className="relative flex h-2.5 w-2.5">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
@@ -124,7 +124,7 @@ export default function Home() {
 
           {/* Main heading */}
           <div className="animate-slide-up" style={{ animationDelay: "0.1s" }}>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-center text-slate-900 tracking-tight leading-[1.1]">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-center text-slate-900 tracking-tight leading-[1.1]">
               AWS from
               <br />
               <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">
@@ -134,7 +134,7 @@ export default function Home() {
           </div>
 
           <p
-            className="mt-6 text-center text-slate-500 max-w-xl mx-auto text-lg leading-relaxed animate-slide-up"
+            className="mt-4 sm:mt-6 text-center text-slate-500 max-w-xl mx-auto text-sm sm:text-base md:text-lg leading-relaxed animate-slide-up px-2"
             style={{ animationDelay: "0.2s" }}
           >
             The only study guide you need. Interactive notes, exam scenarios,
@@ -143,7 +143,7 @@ export default function Home() {
 
           {/* Stats row */}
           <div
-            className="mt-12 flex flex-wrap justify-center gap-3 animate-slide-up"
+            className="mt-8 sm:mt-12 grid grid-cols-2 sm:flex sm:flex-wrap justify-center gap-2 sm:gap-3 animate-slide-up"
             style={{ animationDelay: "0.3s" }}
           >
             {[
@@ -154,14 +154,14 @@ export default function Home() {
             ].map((stat) => (
               <div
                 key={stat.label}
-                className="flex items-center gap-2.5 px-5 py-2.5 rounded-2xl bg-white/70 border border-slate-200/60 shadow-sm"
+                className="flex items-center gap-2 sm:gap-2.5 px-3 sm:px-5 py-2 sm:py-2.5 rounded-2xl bg-white/70 border border-slate-200/60 shadow-sm"
               >
-                <span className="text-base">{stat.icon}</span>
+                <span className="text-sm sm:text-base">{stat.icon}</span>
                 <div>
-                  <span className="text-sm font-bold text-slate-900">
+                  <span className="text-xs sm:text-sm font-bold text-slate-900">
                     {stat.value}
                   </span>
-                  <span className="text-xs text-slate-400 ml-1.5">
+                  <span className="text-[10px] sm:text-xs text-slate-400 ml-1 sm:ml-1.5">
                     {stat.label}
                   </span>
                 </div>
@@ -172,7 +172,7 @@ export default function Home() {
       </div>
 
       {/* Topic Cards Section */}
-      <div className="max-w-6xl mx-auto px-6 md:px-10 py-16">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-10 py-10 sm:py-16">
         {/* Section header */}
         <div className="flex items-center gap-3 mb-8">
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center shadow-sm shadow-indigo-200">
@@ -189,7 +189,7 @@ export default function Home() {
         </div>
 
         {/* Cards grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 stagger-children">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 stagger-children">
           {topics.map((topic) => (
             <Link
               key={topic.href}
@@ -262,7 +262,7 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <div className="max-w-6xl mx-auto px-6 md:px-10 pb-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-10 pb-8 sm:pb-12">
         <div className="flex items-center justify-center gap-2 text-xs text-slate-400">
           <span>Built for</span>
           <span className="font-semibold text-slate-600">AWS CLF-C02</span>
