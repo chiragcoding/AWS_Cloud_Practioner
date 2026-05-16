@@ -45,6 +45,38 @@ const topics = [
     gradient: "from-rose-500 to-pink-600",
     lightBg: "bg-rose-50",
   },
+  {
+    name: "Databases",
+    href: "/topics/databases",
+    icon: "🗄️",
+    description: "RDS, Aurora, DynamoDB & More",
+    gradient: "from-cyan-500 to-blue-600",
+    lightBg: "bg-cyan-50",
+  },
+  {
+    name: "Route 53",
+    href: "/topics/route53",
+    icon: "🌐",
+    description: "DNS & Domain Management",
+    gradient: "from-green-500 to-emerald-600",
+    lightBg: "bg-green-50",
+  },
+  {
+    name: "CloudWatch",
+    href: "/topics/cloudwatch",
+    icon: "📊",
+    description: "Monitoring & Observability",
+    gradient: "from-yellow-500 to-orange-600",
+    lightBg: "bg-yellow-50",
+  },
+  {
+    name: "VPC & Networking",
+    href: "/topics/vpc",
+    icon: "🔒",
+    description: "Virtual Private Cloud",
+    gradient: "from-slate-500 to-zinc-600",
+    lightBg: "bg-slate-50",
+  },
 ];
 
 export function Sidebar() {
@@ -115,7 +147,7 @@ export function Sidebar() {
             <span className="text-[10px] font-semibold text-slate-500 uppercase tracking-wider">
               Progress
             </span>
-            <span className="text-[10px] font-bold text-indigo-600">5 Topics</span>
+            <span className="text-[10px] font-bold text-indigo-600">9 Topics</span>
           </div>
           <div className="w-full h-1.5 bg-slate-200/60 rounded-full overflow-hidden">
             <div className="h-full w-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full transition-all duration-1000"></div>

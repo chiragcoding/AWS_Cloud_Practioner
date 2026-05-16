@@ -56,6 +56,50 @@ const topics = [
     borderHover: "hover:border-rose-200",
     iconBg: "bg-rose-100",
   },
+  {
+    name: "Databases",
+    href: "/topics/databases",
+    icon: "🗄️",
+    description: "RDS, Aurora, DynamoDB & More",
+    details: "RDS, Aurora, DynamoDB, ElastiCache, Redshift, Neptune",
+    gradient: "from-cyan-500 to-blue-600",
+    lightGradient: "from-cyan-50 to-blue-50",
+    borderHover: "hover:border-cyan-200",
+    iconBg: "bg-cyan-100",
+  },
+  {
+    name: "Route 53",
+    href: "/topics/route53",
+    icon: "🌐",
+    description: "DNS & Domain Management",
+    details: "DNS, Hosted Zones, Routing Policies, Health Checks, Domain Registration",
+    gradient: "from-green-500 to-emerald-600",
+    lightGradient: "from-green-50 to-emerald-50",
+    borderHover: "hover:border-green-200",
+    iconBg: "bg-green-100",
+  },
+  {
+    name: "CloudWatch",
+    href: "/topics/cloudwatch",
+    icon: "📊",
+    description: "Monitoring & Observability",
+    details: "Metrics, Alarms, Logs, EventBridge, Dashboards, X-Ray",
+    gradient: "from-yellow-500 to-orange-600",
+    lightGradient: "from-yellow-50 to-orange-50",
+    borderHover: "hover:border-yellow-200",
+    iconBg: "bg-yellow-100",
+  },
+  {
+    name: "VPC & Networking",
+    href: "/topics/vpc",
+    icon: "🔒",
+    description: "Virtual Private Cloud",
+    details: "Subnets, Security Groups, NACLs, VPN, Direct Connect, Endpoints",
+    gradient: "from-slate-500 to-zinc-600",
+    lightGradient: "from-slate-50 to-zinc-50",
+    borderHover: "hover:border-slate-300",
+    iconBg: "bg-slate-100",
+  },
 ];
 
 export default function Home() {
@@ -81,10 +125,10 @@ export default function Home() {
           {/* Main heading */}
           <div className="animate-slide-up" style={{ animationDelay: "0.1s" }}>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-center text-slate-900 tracking-tight leading-[1.1]">
-              Master AWS
+              AWS from
               <br />
               <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">
-                Cloud Practitioner
+                Zero to Cloud Hero
               </span>
             </h1>
           </div>
@@ -103,7 +147,7 @@ export default function Home() {
             style={{ animationDelay: "0.3s" }}
           >
             {[
-              { label: "Topics", value: "5", icon: "📚" },
+              { label: "Topics", value: "9", icon: "📚" },
               { label: "Exam Tips", value: "50+", icon: "💡" },
               { label: "Comparison Tables", value: "10+", icon: "📊" },
               { label: "Practice Scenarios", value: "20+", icon: "🎯" },
